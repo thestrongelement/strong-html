@@ -1,0 +1,31 @@
+{
+  "name": "strong-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thestrongelement/strong-html.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thestrongelement/strong-html/issues"
+  },
+  "homepage": "https://github.com/thestrongelement/strong-html",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "browser-sync": "^1.8.2",
+    "del": "^1.2.1",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-sequence": "^0.4.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-util": "^3.0.4",
+    "minimist": "^1.1.3",
+    "run-sequence": "^1.1.2"
+  }
+}
