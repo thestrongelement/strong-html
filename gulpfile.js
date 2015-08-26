@@ -25,7 +25,7 @@ gulp.task('serve', ['www'], function () {
       baseDir: [dir__www],
       routes: {
         '/bower_components': 'bower_components',
-        '/css': 'css'
+        '/html': 'html'
       }
     }
   });
