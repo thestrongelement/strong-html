@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="<%= app.description %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= app.title %></title>
+  </head>
+  <body id=thestrongelement-com>
+		<div class=ui>
+
+  <% els.phrase.forEach(function(el,i){ %>
+    <%- markup(el) %> 
+  <% }); %>
+		
+		</div>
+	</body>
+</html>

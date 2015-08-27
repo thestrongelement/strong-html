@@ -1,24 +1,27 @@
 {
-  "root": 'html',
+  "root": "html",
   "app": [
-    'body', 'header', 'footer', 'main'
+    "body", "header", "footer", "main"
   ],
   "headers": [
-    'h1', 'h2', 'h3', 'h4', 'h5', 'h6'
+    "h1", "h2", "h3", "h4", "h5", "h6"
   ],
   "sections": [
-    'aside', 'nav', 'section'
+    "aside", "nav", "section"
   ],
   "section__roots": [
-    'blockquote', 'body', 'fieldset', 'figure', 'td'
+    "blockquote", "body", "fieldset", "figure", "td"
   ],
   "flow": [
-    'a', 'abbr', 'address', 'article', 'aside', 'audio', 'b', 'body', 'bdi', 'bdo', 'big', 'blockquote', 'br', 'button', 'canvas', 'cite', 'code', 'data', 'datalist', 'del', 'details', 'dfn', 'dialog', 'div', 'dl', 'em', 'embed', 'fieldset', 'figure', 'footer', 'form', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'header', 'hr', 'i', 'iframe', 'img', 'input', 'ins', 'kbd', 'keygen', 'label', 'main', 'map', 'mark', 'math', 'menu', 'meter', 'nav', 'noscript', 'object', 'ol', 'output', 'p', 'pre', 'progress', 'q', 'ruby', 's', 'samp', 'script', 'section', 'select', 'small', 'span', 'strong', 'sub', 'sup', 'svg', 'table', 'textarea', 'time', 'u', 'ul', 'var', 'video', 'wbr'
+    "a[href]", "abbr", "address", "article", "aside", "audio", "b", "body", "bdi", "bdo", "big", "blockquote", "br", "button", "canvas", "cite", "code", "data", "datalist", "del", "details", "dfn", "dialog", "div", "dl", "em", "embed", "fieldset", "figure", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "header", "hr", "i", "iframe", "img", "input", "ins", "kbd", "keygen", "label", "main", "map", "mark", "math", "menu", "meter", "nav", "noscript", "object", "ol", "output", "p", "pre", "progress", "q", "ruby", "s", "samp", "script", "section", "select", "small", "span", "strong", "sub", "sup", "svg", "table", "textarea", "time", "u", "ul", "var", "video", "wbr"
   ],
   "phrase": [
-    'a', 'abbr', 'audio', 'b', 'bdi', 'bdo', 'br', 'button', 'canvas', 'cite', 'code', 'data', 'datalist', 'del', 'dfn', 'em', 'embed', 'i', 'iframe', 'img', 'input', 'ins', 'kbd', 'keygen', 'label', 'map', 'mark', 'math', 'meter', 'noscript', 'object', 'output', 'progress', 'q', 'ruby', 's', 'samp', 'script', 'select', 'small', 'span', 'strong', 'sub', 'sup', 'svg', 'template', 'textarea', 'time', 'u', 'var', 'video', 'wbr'
+    "a", "abbr", "audio", "b", "bdi", "bdo", "br", "button", "canvas", "cite", "code", "data", "datalist", "del", "dfn", "em", "embed", "i", "iframe", "img", "input", "ins", "kbd", "keygen", "label", "map", "mark", "math", "meter", "noscript", "object", "output", "progress", "q", "ruby", "s", "samp", "script", "select", "small", "span", "strong", "sub", "sup", "svg", "template", "textarea", "time", "u", "var", "video", "wbr"
   ],
   "interactive": [
-    'a', 'audio[controls]', 'button', 'details', 'embed', 'iframe', 'img[usemap]', 'input', 'keygen', 'label', 'object[usemap]', 'select', 'textarea', 'video[controls]'
+    "a", "audio[controls]", "button", "details", "embed", "iframe", "img[usemap]", "input", "keygen", "label", "object[usemap]", "select", "textarea", "video[controls]"
+  ],
+  "empty": [
+    "br", "img", "input"
   ]
 }

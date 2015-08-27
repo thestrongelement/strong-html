@@ -6,6 +6,10 @@ var browserSync = require('browser-sync');
 var del = require('del');
 
 var json__pkg = require('./package.json');
+var json__settings = require('./data/settings.json');
+var json__els = require('./data/els.json');
+var json__strings = require('./data/strings.json');
+
 var cli_argv = require('minimist')(process.argv.slice(2));
 var minify = typeof cli_argv.minify != 'undefined';
 
@@ -35,6 +39,12 @@ gulp.task('serve', ['www'], function () {
 
 gulp.task('html', function () {
   return gulp.src(dir__src_html+'/**/*.html')
+    .pipe($.ejs({
+      app: json__settings,
+      els: json__els,
+      strings: json__strings,
+      markup: require('./helpers/markup.js')
+    }).on('error', $.util.log))
     .pipe(gulp.dest(dir__www))
     .pipe(reload());
 });
