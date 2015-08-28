@@ -2,6 +2,7 @@
 'use strict';
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
+var mustache = require('mustache');
 var browserSync = require('browser-sync');
 var del = require('del');
 
@@ -35,6 +36,18 @@ gulp.task('serve', ['www'], function () {
   });
   gulp.watch(dir__src_html+'/**/*.html', ['html']);
   gulp.watch(dir__public+'/**/*', ['public']);
+});
+
+gulp.task('mustache', function () {
+  return gulp.src(dir__src_html+'/**/*.html')
+    .pipe($.mustache({
+      app: json__settings,
+      els: json__els,
+      strings: json__strings,
+      markup: require('./helpers/markup.js')
+    }))
+    .pipe(gulp.dest(dir__www));
+
 });
 
 gulp.task('html', function () {
