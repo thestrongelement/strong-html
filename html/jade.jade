@@ -1,0 +1,20 @@
+html
+  head
+    meta(charset="utf-8")
+    meta(description="#{app.description}")
+    meta(viewport="width=device-width, initial-scale=1")
+    title #{app.title} — The strong element
+    link(href="bower_components/strong-css/dist/css/strong-css.css")
+    block scripts
+      script(src='/jquery.js')
+  body#thestrongelement-com
+    .ui
+        main.ui__view(role="main")
+            article
+                p #{app.title} 
+                each val in strings.headlines
+                    p #{val}
+    block content
+    block foot
+        footer.ui__footer
+            p some xxx footer content

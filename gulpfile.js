@@ -38,6 +38,21 @@ gulp.task('serve', ['www'], function () {
   gulp.watch(dir__public+'/**/*', ['public']);
 });
 
+/* https://github.com/phated/gulp-jade */
+gulp.task('jade', function () {
+  return gulp.src(dir__src_html+'/**/*.jade')
+    .pipe($.jade({
+      locals: {
+        app: json__settings,
+        els: json__els,
+        strings: json__strings,
+        markup: require('./helpers/markup.js')
+      }
+    }))
+    .pipe(gulp.dest(dir__www));
+
+});
+
 gulp.task('mustache', function () {
   return gulp.src(dir__src_html+'/**/*.html')
     .pipe($.mustache({
