@@ -5,6 +5,7 @@ var $ = require('gulp-load-plugins')();
 var mustache = require('mustache');
 var browserSync = require('browser-sync');
 var del = require('del');
+var handlebars = require('gulp-compile-handlebars');
 
 var json__pkg = require('./package.json');
 var json__settings = require('./data/settings.json');
@@ -35,6 +36,7 @@ gulp.task('serve', ['www'], function () {
     }
   });
   gulp.watch(dir__src_html+'/**/*.html', ['html']);
+  gulp.watch(dir__src_html+'/**/*.hbs', ['template']);
   gulp.watch(dir__public+'/**/*', ['public']);
 });
 
@@ -52,6 +54,20 @@ gulp.task('jade', function () {
     .pipe(gulp.dest(dir__www));
 
 });
+
+
+gulp.task('template', function () {
+  return gulp.src(dir__src_html+'/**/*.hbs')
+    .pipe(handlebars({
+    
+    }))
+    .pipe($.rename(function(path) {
+      path.extname = ".html"
+    }))
+    .pipe(gulp.dest(dir__www))
+    .pipe(reload())
+});
+
 
 gulp.task('mustache', function () {
   return gulp.src(dir__src_html+'/**/*.html')
@@ -84,7 +100,7 @@ gulp.task('public', function() {
 });
 
 //build
-gulp.task('www', $.sequence('clean',['public'],'html'));
+gulp.task('www', $.sequence('clean',['public'],'template','html'));
 
 gulp.task('default', function () {
   gulp.start('serve');

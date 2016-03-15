@@ -8,7 +8,6 @@
   ],
   "sections": [
     "article", "aside", "nav", "section", "header", "footer"
-//    "article", "aside", "nav", "section"
   ],
   "section__roots": [
     "aside", "nav", "section", "blockquote", "body", "fieldset", "figure", "td"
