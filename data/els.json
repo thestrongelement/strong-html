@@ -7,10 +7,11 @@
     "h1", "h2", "h3", "h4", "h5", "h6"
   ],
   "sections": [
-    "aside", "nav", "section"
+    "article", "aside", "nav", "section", "header", "footer"
+//    "article", "aside", "nav", "section"
   ],
   "section__roots": [
-    "blockquote", "body", "fieldset", "figure", "td"
+    "aside", "nav", "section", "blockquote", "body", "fieldset", "figure", "td"
   ],
   "flow": [
     "a[href]", "abbr", "address", "article", "aside", "audio", "b", "body", "bdi", "bdo", "big", "blockquote", "br", "button", "canvas", "cite", "code", "data", "datalist", "del", "details", "dfn", "dialog", "div", "dl", "em", "embed", "fieldset", "figure", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "header", "hr", "i", "iframe", "img", "input", "ins", "kbd", "keygen", "label", "main", "map", "mark", "math", "menu", "meter", "nav", "noscript", "object", "ol", "output", "p", "pre", "progress", "q", "ruby", "s", "samp", "script", "section", "select", "small", "span", "strong", "sub", "sup", "svg", "table", "textarea", "time", "u", "ul", "var", "video", "wbr"
