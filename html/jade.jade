@@ -11,7 +11,7 @@ html
     .ui
         main.ui__view(role="main")
             article
-                p #{app.title} 
+                p=app.title 
                 each val in strings.headlines
                     p #{val}
     block content
